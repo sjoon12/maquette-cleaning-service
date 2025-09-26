@@ -240,7 +240,6 @@ button {
   margin-bottom: 10px;
 }
 
-/* Social Icons  */
 .social-icons {
   margin-top: 15px;
   display: flex;
@@ -248,22 +247,22 @@ button {
 }
 
 .social-icons a {
-  color: #000;
-  font-size: 18px;
+  color: #000;          
+  font-size: 18px;      
+  text-decoration: none;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #f4c20d; 
+  color: #f4c542;       
 }
 
-/* ===== Footer Bottom ===== */
 .footer-bottom {
   text-align: center;
   padding: 15px;
-  background: #f9f9f9;
   font-size: 14px;
-  color: #666;
-  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+  margin-top: 20px;
 }
+
 
