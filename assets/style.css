@@ -1,12 +1,21 @@
 /* ===== Reset ===== */
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
   color: #222;
   background: #fff;
+  box-sizing: border-box;
 }
-h1, h2, h3 { margin: 10px 0; }
-p { margin: 5px 0; }
+h1,
+h2,
+h3 {
+  margin: 50px 0;
+}
+p {
+  margin: 4% 0%;
+  text-align: center;
+}
 button {
   padding: 10px 20px;
   background: #000;
@@ -20,28 +29,35 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
   background: #fff;
-  border-bottom: 1px solid #ddd;
+  padding: 5px 20px;
+  border-bottom: 1px solid #eee;
 }
 .logo-box {
   display: flex;
   align-items: center;
-  gap: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  gap: 8px;
 }
 .logo-icon {
-  width: 18px;
-  height: 18px;
+  width: 200px;
+  height: 120px;
 }
 .header .nav {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  font-size: 14px;
+}
+
+.header .nav > div {
+  padding: 10px;
 }
 .header .nav .active {
   color: #000;
-  background: #FFD700;
-  padding: 4px 8px;
-  border-radius: 3px;
+  background: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* ===== Hero ===== */
@@ -52,21 +68,24 @@ button {
 }
 .hero-img {
   width: 100%;
-  height: 450px;
+  height: 950px;
   object-fit: cover;
 }
 .hero-overlay {
   position: absolute;
-  top:0; left:0; right:0; bottom:0;
-  background: rgba(0,0,0,0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 .hero-text {
   position: absolute;
-  top: 30%;
+  top: 29%;
   width: 100%;
 }
 .hero-text .small-text {
-  font-size: 10px;
+  font-size: 14px;
 }
 .hero-text h1 {
   font-size: 38px;
@@ -74,30 +93,39 @@ button {
 }
 .hero-extra-img {
   margin-top: 15px;
-  width: 220px;
+  width: 290px;
+}
+h4 {
+  position: absolute;
+  color: #000;
+  bottom: 2px;
+  right: 43%;
+  top: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .appointment-box {
   position: absolute;
-  bottom: -40px;
+  bottom: -2px;
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
-  padding: 20px;
+  padding: 60px;
   display: flex;
   gap: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== Services ===== */
 .services {
   text-align: center;
-  padding: 80px 30px;
+  padding: 10px 30px;
 }
 .services .service-list {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
+  gap: 40px;
+  margin-top: 20px;
 }
 .services .service {
   border: 1px solid #ddd;
@@ -105,8 +133,8 @@ button {
   width: 220px;
 }
 .services .service img {
-  width: 100%;
-  height: 120px;
+  width: 60%;
+  height: 150px;
   object-fit: cover;
 }
 .services.dark {
@@ -122,22 +150,30 @@ button {
 }
 
 /* ===== Industry, Eco, Trusted ===== */
-.industry, .eco, .trusted {
+.industry,
+.eco,
+.trusted {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-  padding: 70px 60px;
+  gap: 50px;
+  padding: 30px 60px;
 }
-.industry-content, .eco-content, .trusted-content {
+.industry-content,
+.eco-content,
+.trusted-content {
   flex: 1;
 }
-.industry-img, .eco-img, .trusted-img {
+.industry-img,
+.eco-img,
+.trusted-img {
   flex: 1;
 }
-.industry img, .eco img, .trusted img {
-  width: 100%;
-  max-width: 300px;
+.industry img,
+.eco img,
+.trusted img {
+  width: 150%;
+  max-width: 500px;
   display: block;
   margin: 0 auto;
   height: auto;
@@ -146,10 +182,11 @@ button {
 .play-btn {
   background: none;
   border: 1px solid #000;
-  color: #000;
+  color: #ffffff;
   font-size: 14px;
   padding: 6px 12px;
   cursor: pointer;
+  background-color: #000;
 }
 
 /* ===== Reviews ===== */
@@ -204,14 +241,17 @@ button {
 }
 .cta-overlay {
   position: absolute;
-  top:0; left:0; right:0; bottom:0;
-  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 .cta-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .call-now {
   margin-bottom: 10px;
@@ -223,46 +263,43 @@ button {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 40px 30px;
+  padding: 50px 19px;
   background: #fff;
   color: #000;
   border-top: 1px solid #eee;
 }
 
 .footer-column {
-  width: 220px;
-  margin-bottom: 20px;
+  width: 170px;
 }
 
 .footer-logo {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
+  width: 180px;
+  height: 100px;
+  margin-bottom: 20px;
 }
 
 .social-icons {
-  margin-top: 15px;
+  margin-right: 120px;
   display: flex;
   gap: 15px;
 }
 
 .social-icons a {
-  color: #000;          
-  font-size: 18px;      
+  color: #000;
+  font-size: 18px;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: #f4c542;       
+  color: #000000;
 }
 
 .footer-bottom {
   text-align: center;
-  padding: 15px;
+  padding: 13px;
   font-size: 14px;
   background: #f9f9f9;
   margin-top: 20px;
 }
-
-
